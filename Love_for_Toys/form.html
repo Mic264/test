@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Meta tags to define the character set and make the site responsive -->
+    <meta charset="utf-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Makes the page responsive to different screen sizes -->
+    <meta name="generator" content="Hugo 0.84.0"> <!-- Indicates the tool used to generate the site (Hugo) -->
+    <title>Love for Toys</title> <!-- Title that appears in the browser tab -->
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/"> <!-- Canonical link to prevent duplicate content -->
+
+    <!-- Linking to Bootstrap CSS file for styling the page -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to the JavaSript file to validate the page -->
+    <script src="js/form.js"></script>
+
+    <!-- Link to custom CSS file for additional styles specific to this template -->
+    <link href="css/form.css" rel="stylesheet">
+  </head>
+  
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <!-- Main container for the page content -->
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    
+      <!-- Header section with the site title and navigation bar -->
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Love for Toys</h3> <!-- Site title -->
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <!-- Navigation links to different sections of the website -->
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about_us.html">About</a>
+            <a class="nav-link" href="our_services.html">Our Products</a>
+            <a class="nav-link active" aria-current="page" href="form.html">Sign up</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main content section for the form to create an account -->
+      <main class="px-3">
+        <section class="py-5">
+          <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+              <h1 class="display-5 fw-bolder">Create account</h1>
+              <p>* means required</p>
+
+              <!-- The sign-up form that collects user information -->
+              <form name="signupForm" method="get" action="output.html" onsubmit="return validateForm()">
+                <!-- Form fields to input personal details -->
+                *Full Name: <input type="text" name="fname"><br><br> <!-- First name field -->
+                Middle Name: <input type="text" name="mname"><br><br> <!-- Middle name field -->
+                *Last Name: <input type="text" name="lname"><br><br> <!-- Last name field -->
+                *Email: <input type="email" name="email"><br><br> <!-- Email field with validation -->
+                Phone Number: <input type="tel" name="phone"><br><br> <!-- Phone number field -->
+                *Date of Birth: <input type="date" name="dateofbirth"><br><br> <!-- Date of birth field -->
+
+                <!-- Address fields -->
+                <p>Address:</p>
+                *Street Address: <input type="text" name="StreetAddress"><br><br> <!-- Street address field -->
+                *City: <input type="text" name="City"><br><br> <!-- City field -->
+                *Postal Code: <input type="text" name="PostalCode"><br><br> <!-- Postal code field -->
+
+                <!-- Submit button to submit the form -->
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer section with credits for the template -->
+      <footer class="mt-auto text-white-50">
+        <p>Copyright © Love for Toys 2025</p> <!-- Copyrighting the website -->
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+        <p>Parts of this template were used <a href="https://startbootstrap.com/template/shop-item" class="text-white">Start Bootstrap</a></p> <!-- Attribution to Bootstrap -->
+      </footer>
+    </div>
+  </body>
+</html>
